@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f7fb">
+    <title>Socially - a little more connected</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <header class="topbar">
+        <a class="brand" href="#/feed" aria-label="Socially home">
+            <span class="brand-mark" aria-hidden="true">s</span>
+            Socially
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="#/feed">Home</a>
+            <a href="#/explore">Explore</a>
+        </nav>
+        <span id="api-status" class="server-status" role="status">Connecting...</span>
+        <div class="topbar-account" id="account-nav"></div>
+    </header>
+
+    <main class="page-shell">
+        <div id="global-message" class="notice" role="status" aria-live="polite"></div>
+        <div id="app-content" tabindex="-1">
+            <section class="loading-card" aria-live="polite">Loading Socially...</section>
+        </div>
+        <footer class="site-footer">
+            <span>Socially</span>
+            <span>A small place for good conversations.</span>
+        </footer>
+    </main>
+</body>
+
+</html>
